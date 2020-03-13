@@ -1,0 +1,73 @@
+* {
+	margin: 0px; /* Standardize margin as each browser have different value set */
+	padding: 0px; /* Standardize padding as each browser have different value set */
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: #eeeeee;
+	cursor: default; /*context-menu*/
+}
+
+.page {
+	margin: 20px 20px 0 20px; /*Top Right Bottom Left*/
+	background-color: white;
+	padding: 30px;
+}
+.container { text-align: center; }
+
+header {
+	margin-bottom: 20px;
+	color: #196F3D;
+}
+
+table {
+	margin: auto;
+	border-collapse: separate; /*Separate the table cell from each other*/
+	border-spacing: 0 5px; /*Row spacing of table*/
+	text-align: left
+}
+
+form#form-registration .col-label { width: 180px; }
+form#form-registration .col-textinput input.init { width: 60px; }
+form#form-registration .col-textinput input { width: 250px; }
+form#form-registration .col-textinput textarea {
+	width: 250px;
+	height: 75px;
+	border-radius: 5px;
+	padding: 5px 10px; /*TopBottom LeftRight*/
+	resize: none;
+}
+form#form-registration .col-textinput input.phone { width: 175px; }
+
+form#form-registration input[type="text"],
+form#form-registration input[type="email"] {
+	border-radius: 5px;
+	padding: 5px 10px; /*TopBottom LeftRight*/
+}
+
+.txtbox {
+	cursor: auto;
+	border: 1px solid #58D68D;
+}
+
+.txtbox:focus { border: 1px solid #28B463; }
+
+.btn {
+	cursor: pointer;
+	border-style: none;
+	border-radius: 20px;
+	background-color: #28B463;
+	padding: 10px 30px; /*TopBottom RightLeft*/
+	color: white;
+	font-weight: bold;
+}
+
+.btn:hover { background-color: #229954; }
+.btn:active { background-color: #1E8449; }
+
+.btn, .btn:active, .btn:focus,
+.txtbox, .txtbox:active, .txtbox:focus { outline: none; } /*Remove dotted lining when an element clicked*/
